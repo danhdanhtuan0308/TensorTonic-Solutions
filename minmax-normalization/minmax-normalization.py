@@ -9,6 +9,6 @@ def minmax_scale(X, axis=0, eps=1e-12):
     safe_X = np.array(X, dtype=float)
     min_X = np.min(safe_X, axis=axis, keepdims=True)
     max_X = np.max(safe_X, axis=axis, keepdims=True)
-    X_hat = (safe_X - min_X) / (max_X - min_X + eps )
+    X_hat = (safe_X - min_X) / (max_X - min_X + eps)
     return X_hat
     
